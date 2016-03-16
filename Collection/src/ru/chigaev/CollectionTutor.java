@@ -1,7 +1,6 @@
 package ru.chigaev;
 
 import java.util.*;
-
 import org.junit.Test;
 
 /**
