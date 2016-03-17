@@ -6,7 +6,11 @@ import java.math.RoundingMode;
 
 /**
 change on github
+<<<<<<< HEAD
 rrr
+=======
+
+>>>>>>> 8adb444e107f6ec74b35ed33468e802cf5dc9c4f
  */
 public class rr {
 
