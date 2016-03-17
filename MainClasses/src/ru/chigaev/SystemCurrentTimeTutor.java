@@ -30,6 +30,7 @@ public class SystemCurrentTimeTutor  {
      * @return
      */
     public long profiler(Runnable run) {
+
         run.run();
         return 0;
     }
