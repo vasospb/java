@@ -4,7 +4,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
 
-
 public final class ClassLoaderLeakExample {
     static volatile boolean running = true; // used to stop LongRunningThread
 
