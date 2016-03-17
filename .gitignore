@@ -12,8 +12,6 @@
 *.war
 *.ear
 
-workspace.xml
-
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
@@ -29,12 +27,7 @@ hs_err_pid*
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
-
-.idea/MainClasses/workspace.xml
-.idea/MainClasses/tasks.xml
-.idea/MainClasses/dictionaries
-.idea/MainClasses/vcs.xml
-.idea/MainClasses/jsLibraryMappings.xml
+MainClasses/.idea/*.xml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
