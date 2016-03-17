@@ -47,12 +47,26 @@ public class ArrayCopyTutor {
     }
 
     public void deleteAnimal(int position) {
+        if (position<0||position >animals_size-1){
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        if (position == animals_size-1) {
+            animals[position] = null;
+            animals_size--;
+        } else {
+            System.arraycopy(animals,position+1,animals,position,animals_size-position);
+            animals_size--;
+             }
+
     }
 
     public void showAnimals() {
         for (int i=0;i<animals_size; i++) {
-            System.out.println(i+") "+animals[i]);
+            System.out.println(i + ") "+animals[i]);
+
         }
+        System.out.println("Длина масива"+animals.length);
+        System.out.println("Количество животных "+animals_size);
     }
 
     @Test
@@ -68,7 +82,7 @@ public class ArrayCopyTutor {
         addAnimal("Тигр");
         addAnimal("Кошка");
         addAnimal("Черепаха");
-        insertAnimal(1, "Человек");
+        insertAnimal(5, "Человек");
         deleteAnimal(2);
         showAnimals();
     }

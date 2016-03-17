@@ -1,9 +1,6 @@
 package ru.chigaev;
-
 import java.util.*;
-
 import org.junit.Test;
-
 /**
  * 1) Имплементрируйте метод joinByCycle(). Проверьте результат.
  * Имплементируйте методы getAnimalsList(), getAnimalsSet(), getAnimalsOrderedSet()
