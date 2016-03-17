@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class SystemCurrentTimeTutor  {
 
-    public static void log(String s){
+    public  void log(String s){
         System.out.println(s);
     }
     public static void log(float s){
@@ -30,9 +30,11 @@ public class SystemCurrentTimeTutor  {
      * @return
      */
     public long profiler(Runnable run) {
-
+       long time =getTimeInMillis();
         run.run();
-        return 0;
+       time = getTimeInMillis() -time;
+
+        return time;
     }
 
     /**
@@ -104,7 +106,8 @@ public class SystemCurrentTimeTutor  {
         return profiler(new Runnable() {
             @Override
             public void run() {
-                for (int i=0;i<100000000;i++);
+
+                for (int i=0;i<2000000000;i++);
             }
         });
     }
