@@ -46,6 +46,14 @@ public class ObjectEqualsTutor  {
             if (this.name == otherEmployee.name  || this.surname == otherEmployee.surname) return true;
                     else return false;
         }
+
+        public int hashCode(){
+            int result = 0;
+
+            result = name.hashCode();
+            result = result*surname.hashCode();
+            return result;
+        }
     }
 
     public List<Employee> getEmployees() {
