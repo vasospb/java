@@ -5,12 +5,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
- * Created by vaso on 17.03.2016.
-<<<<<<< HEAD
-change on pc
-=======
- * change on github
->>>>>>> c37d86dc6760b4b189c983574713a87417b51547
+change on github
  */
 public class rr {
 
