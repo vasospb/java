@@ -56,7 +56,7 @@ public class StringTutor {
         if (!(s.equals("Привет,")))
             return false;
         else
-            s = greeting.substring(8, greeting.length()).trim();
+            s = greeting.substring(7, greeting.length()).trim();
         if (!(s.endsWith("!"))) return false;
         else
             a = s.split(" ");
