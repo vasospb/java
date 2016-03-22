@@ -35,6 +35,9 @@ public class StringBuilderTutor {
         System.out.println(animalsString);
         assertEquals("Список животных: Корова, Гусь, Кошка, Собака, Слон, "+
                 "Заяц, Змея, Курица, Лошадь, Человек.", animalsString);
+        Integer i=5;
+
+
     }
 
 }
