@@ -22,7 +22,7 @@ public class ThreadTutor2 {
         public void run() {
             for (int i=0;i<100;i++) {
                 log(threadName+":"+i);
-                //Thread.yield();
+             Thread.yield();
             }
         }
     }
@@ -32,8 +32,8 @@ public class ThreadTutor2 {
         Thread t1 =new Thread(new TestThread("t1"));
         Thread t2 = new Thread(new TestThread("t2"));
         System.out.println("Starting threads");
-        t2.setPriority(Thread.MAX_PRIORITY);
-        t1.setPriority(Thread.MIN_PRIORITY);
+       t2.setPriority(Thread.MAX_PRIORITY);
+       t1.setPriority(Thread.MIN_PRIORITY);
         t1.start();
         t2.start();
 
