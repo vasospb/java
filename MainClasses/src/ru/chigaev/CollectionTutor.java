@@ -31,9 +31,9 @@ public class CollectionTutor {
     /**
      * Метод должен возвращать ArrayList со всеми животными
      */
-    public List<String> getAnimalsList(String[] a) {
+    public List<String> getAnimalsList() {
         List<String> arrayAnimals = new ArrayList<String>();
-             arrayAnimals   = Arrays.asList(a);
+             arrayAnimals   = Arrays.asList(animals);
         return arrayAnimals;
     }
 
@@ -84,17 +84,25 @@ public class CollectionTutor {
      * используя итератор
      */
     public String joinByIterator(Collection<String> c) {
-        return null;
+        Iterator iter = c.iterator();
+        String str = new String();
+        while (iter.hasNext())
+        {
+
+            str=str+", "+iter.next();
+        }
+        return str;
     }
 
     @Test
     public void testCollections() {
         System.out.println("getAnimalsList: "+joinByCycle(Arrays.asList(animals)));
 
-        System.out.println("getAnimalsList: "+joinByCycle(getAnimalsList(animals)));
+        System.out.println("getAnimalsList: "+joinByCycle(getAnimalsList()));
         System.out.println("getAnimalsSet: "+joinByCycle(getAnimalsSet()));
 
-    //    System.out.println("getAnimalsList by iterator: "+joinByIterator(getAnimalsList()));
+       System.out.println("getAnimalsList by iterator: "+joinByIterator(getAnimalsList()));
+        System.out.println("getAnimalsList by iterator: "+joinByIterator(getAnimalsSet()));
     }
 
 }
