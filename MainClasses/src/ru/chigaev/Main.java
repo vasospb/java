@@ -13,6 +13,10 @@ public class Main {
 
 
     public static void main(String[] args) {
+        int i =1;
+        System.out.println(++i);
+        System.out.println(i);
+
       long currentTime= getTimeInMillis();
         Date currentDate =new Date(currentTime);
         System.out.println(currentTime);

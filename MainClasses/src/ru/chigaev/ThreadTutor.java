@@ -19,8 +19,9 @@ public class ThreadTutor {
 
         @Override
         public void run() {
-            for (int i=0;i<100;i++) {
-                log(threadName+":"+i);
+            for (int i=0;i<10;i++) {
+               // System.out.println(threadName +" via system out:"+i);
+               log(threadName+":"+i);
             }
         }
     }
@@ -32,21 +33,17 @@ public class ThreadTutor {
         t1.start();
         t2.start();
 
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-/*
-      try {
-          t1.join();
-            t2.join();
+
+    /*  try {
+       //   t1.join();
+          System.out.println("---------------------");
+        //  t2.join();
       } catch (InterruptedException e) {
            e.printStackTrace();
-       }
-       */
+       }*/
+
         System.out.println("Finished");
-        System.out.println(buf);
+        System.out.println("buf "+buf);
     }
 
 }
